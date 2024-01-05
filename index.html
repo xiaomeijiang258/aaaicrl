@@ -189,81 +189,103 @@ We demonstrate the utility of our approach by comparing against leading approach
 </div>
 </div>
 
-<section class="hero is-light is-small">
+<section class="hero">
   <div class="hero-body">
-    <div class="container">
-      <div class="carousel-extra-padding">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-swing_tire">
-            <video class="carousel-video" id="swing_tire" controls muted loop playsinline height="100%" poster="static/images/swing_tire.jpg" data-src="./static/videos/swing_tire.mp4" type="video/mp4">
-            </video>
+    <div class="">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="columns is-centered" style="position: relative;">
+            <div class="column is-half image-board">
+              <img style="width: 100%;" class="clickable-image" src="static/images/Point_Scores.png" alt="Image">
+            <div id="initial-dot"></div>
+          <!-- <div class="red-cross"></div> -->
+            </div>
+            <div class="column is-half image-board move">
+              <img style="width: 100%;" class="clickable-image" src="static/images/Point_Constraint.png" alt="Image">
           </div>
-          <div class="item item-tennis">
-            <video class="carousel-video" id="tennis" controls muted loop playsinline height="100%" poster="static/images/tennis.jpg" data-src="./static/videos/tennis.mp4" type="video/mp4">
-            </video>
           </div>
-          <div class="item item-libby">
-            <video class="carousel-video" id="libby" controls muted loop playsinline height="100%" poster="static/images/libby.jpg" data-src="./static/videos/libby.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-soapbox">
-            <video class="carousel-video" id="soapbox" controls muted loop playsinline height="100%" poster="static/images/soapbox.jpg" data-src="./static/videos/soapbox.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-snowy-trees">
-            <video class="carousel-video" id="snowy-trees" controls muted loop playsinline height="100%" poster="static/images/snowy-trees.jpg" data-src="./static/videos/snowy-trees.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-birch">
-            <video class="carousel-video" id="birch" controls muted loop playsinline height="100%" poster="static/images/birch.jpg" data-src="./static/videos/birch.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
       </div>
     </div>
-  <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Trail visualization</p>
+    <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Comparison on SafetyPointGoal environment</p>
   </div>
-</section>
+  
+  <section class="hero">
+    <div class="hero-body">
+      <div class="">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <div class="columns is-centered" style="position: relative;">
+              <div class="column is-half image-board">
+                <img style="width: 100%;" class="clickable-image" src="static/images/Point_Scores_2.png" alt="Image">
+              <div id="initial-dot"></div>
+            <!-- <div class="red-cross"></div> -->
+              </div>
+              <div class="column is-half image-board move">
+                <img style="width: 100%;" class="clickable-image" src="static/images/Point_Constraint_2.png" alt="Image">
+            </div>
+            </div>
+        </div>
+      </div>
+      <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Comparison on SafetyPointGoal-v3 Environment</p>
+    </div>
+  </section>
+
+<br>
+<br>
 <br>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="carousel-extra-padding">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-giraffe">
-            <video class="carousel-video" id="giraffe" controls muted loop playsinline height="100%" poster="static/images/giraffe.jpg" data-src="./static/videos/giraffe.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-india">
-            <video class="carousel-video" id="india" controls muted loop playsinline height="100%" poster="static/images/india.jpg" data-src="./static/videos/india.mp4">
-            </video>
-          </div>
-          <div class="item item-longboard">
-            <video class="carousel-video" id="longboard" controls muted loop playsinline height="100%" poster="static/images/longboard.jpg" data-src="./static/videos/longboard.mp4">
-            </video>
-          </div>
-          <div class="item item-squirrel">
-            <video class="carousel-video" id="squirrel" controls muted loop playsinline height="100%" poster="static/images/squirrel.jpg" data-src="./static/videos/squirrel.mp4">
-            </video>
-          </div>
-          <div class="item item-hike">
-            <video class="carousel-video" id="hike" controls muted loop playsinline height="100%" poster="static/images/hike.jpg" data-src="./static/videos/hike.mp4" type="video/mp4">
-            </video>
-          </div>   
-          <div class="item item-flamingo">
-            <video class="carousel-video" id="flamingo" controls muted loop playsinline height="100%" poster="static/images/flamingo.jpg" data-src="./static/videos/flamingo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-walking">
-            <video class="carousel-video" id="walking" controls muted loop playsinline height="100%" poster="static/images/walking.jpg" data-src="./static/videos/walking.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
+<section>
+  <div class="columns is-centered has-text-centered">
+    <h2 class="title is-3">Results with CVaR Constraint</h2>
+     <a id="interactive_demo"></a>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
       </div>
     </div>
-  <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Point visualization. Points detected as occluded are marked as "+" </p>
+  </div>
+</div>
+</section>
+<section class="hero">
+<div class="hero-body">
+  <div class="">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="columns is-centered" style="position: relative;">
+          <div class="column is-half image-board">
+            <img style="width: 100%;" class="clickable-image" src="static/images/Merge_Scores_2.png" alt="Image">
+          <div id="initial-dot"></div>
+        <!-- <div class="red-cross"></div> -->
+          </div>
+          <div class="column is-half image-board move">
+            <img style="width: 100%;" class="clickable-image" src="static/images/Merge_Constraint_2.png" alt="Image">
+        </div>
+        </div>
+    </div>
+  </div>
+  <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Experiment with CVaR Constraint in Merge Environment</p>
+</div>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="columns is-centered" style="position: relative;">
+            <div class="column is-half image-board">
+              <img style="width: 100%;" class="clickable-image" src="static/images/SafetyGym_Scores_2.png" alt="Image">
+            <div id="initial-dot"></div>
+          <!-- <div class="red-cross"></div> -->
+            </div>
+            <div class="column is-half image-board move">
+              <img style="width: 100%;" class="clickable-image" src="static/images/SafetyGym_Constraint_2.png" alt="Image">
+          </div>
+          </div>
+      </div>
+    </div>
+    <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Experiment with CVaR Constraint in SafetyGym Environment</p>
   </div>
 </section>
 
@@ -294,17 +316,17 @@ We demonstrate the utility of our approach by comparing against leading approach
         <div class="column is-four-fifths">
           <div class="columns is-centered" style="position: relative;">
             <div class="column is-half image-board">
-              <object data="static/SAC_Comparison_Constraint.pdf" height="100%" width="100%"></object>
+              <img style="width: 100%;" class="clickable-image" src="static/images/SAC_Comparison_Score.png" alt="Image">
             <div id="initial-dot"></div>
           <!-- <div class="red-cross"></div> -->
             </div>
             <div class="column is-half image-board move">
-              <iframe src="static/SAC_Comparison_Constraint.pdf" width="80%" height="80%"></iframe>
+              <img style="width: 100%;" class="clickable-image" src="static/images/SAC_Comparison_Constraint.png" alt="Image">
           </div>
           </div>
       </div>
     </div>
-    <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Ablation Analysis in GridWorld</p>
+    <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Ablation Analysis with GridWorld Environment</p>
   </div>
   
   <section class="hero">
@@ -314,17 +336,17 @@ We demonstrate the utility of our approach by comparing against leading approach
           <div class="column is-four-fifths">
             <div class="columns is-centered" style="position: relative;">
               <div class="column is-half image-board">
-                <img style="width: 100%;" class="clickable-image" src="static/demo/swing/00000.jpg" alt="Image">
+                <img style="width: 100%;" class="clickable-image" src="static/images/Highway_Scores_Aba.png" alt="Image">
               <div id="initial-dot"></div>
             <!-- <div class="red-cross"></div> -->
               </div>
               <div class="column is-half image-board move">
-                <img style="width: 100%;" class="clickable-image" src="static/demo/swing/00000.jpg" alt="Image">
+                <img style="width: 100%;" class="clickable-image" src="static/images/Highway_Constraint_Aba.png" alt="Image">
             </div>
             </div>
         </div>
       </div>
-      <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Ablation Analysis with Highway</p>
+      <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Ablation Analysis with Highway Environment</p>
     </div>
 </section>
 
@@ -332,88 +354,69 @@ We demonstrate the utility of our approach by comparing against leading approach
 <br>
 <br>
 
-
-
-<section>
-    <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3"> Pseudo-Depth Visualization</h2>
-    </div>
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-              <p>Since our method optimizes an underlying quasi-3D representation, we can extract a pseudo-depth visualization showing the relative ordering of different parts of the scene. <font color="blue"><b>Blue</b></font>: near, <font color="red"><b>Red</b></font>: far.</p>
-        </div>
-      </div>
-  </div>
-</div>
-
-</section>
-
-<br>
-<!-- <br> -->
-
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="carousel-extra-padding">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-lab-coat_pseudo_depth">
-            <video class="carousel-video" id="lab-coat_pseudo_depth" controls muted loop playsinline height="100%" poster="static/images/lab-coat_pseudo_depth.jpg" data-src="./static/videos/lab-coat_pseudo_depth.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-swing_pseudo_depth">
-            <video class="carousel-video" id="swing_pseudo_depth" controls muted loop playsinline height="100%" poster="static/images/swing_pseudo_depth.jpg" data-src="./static/videos/swing_pseudo_depth.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-car-roundabout_pseudo_depth">
-            <video class="carousel-video" id="car-roundabout_pseudo_depth" controls muted loop playsinline height="100%" poster="static/images/car-roundabout_pseudo_depth.jpg" data-src="./static/videos/car-roundabout_pseudo_depth.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-butterfly_pseudo_depth">
-            <video class="carousel-video" id="butterfly_pseudo_depth" controls muted loop playsinline height="100%" poster="static/images/butterfly_pseudo_depth.jpg" data-src="./static/videos/butterfly_pseudo_depth.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<br>
-<br>
-<br>
 
 
 <section>
   <div class="columns is-centered has-text-centered">
-    <h2 class="title is-3"> Failure Cases</h2>
+    <h2 class="title is-3">Impact of Value of Reward Penalty</h2>
+     <a id="interactive_demo"></a>
   </div>
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-              <p>Like many motion estimation methods, our method struggles with rapid and highly non-rigid motion as well as thin structures. In these scenarios, pairwise correspondence methods can fail to provide enough reliable correspondences for our method to compute accurate global motion. </p>
-        </div>
+          <p> To investigate the impact of different reward penalty values on the performance, we conduct experiments on GridWorld and Highway using Safe SAC.
+          </p>
       </div>
+    </div>
   </div>
 </div>
-  <br>
-  <div class="video-grid-two-cols">
-      <div>
-          <video class="carousel-video" controls muted loop playsinline poster="static/images/bike-packing.jpg" data-src="static/videos/bike-packing.mp4" type="video/mp4">
-          </video>
+</section>
+<section class="hero">
+  <div class="hero-body">
+    <div class="">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="columns is-centered" style="position: relative;">
+            <div class="column is-half image-board">
+              <img style="width: 100%;" class="clickable-image" src="static/images/SAC_Comparison_Score1.png" alt="Image">
+            <div id="initial-dot"></div>
+          <!-- <div class="red-cross"></div> -->
+            </div>
+            <div class="column is-half image-board move">
+              <img style="width: 100%;" class="clickable-image" src="static/images/SAC_Comparison_Constraint1.png" alt="Image">
+          </div>
+          </div>
       </div>
-      <div>
-          <video class="carousel-video" controls muted loop playsinline poster="static/images/dog-agility.jpg" data-src="static/videos/dog-agility.mp4" type="video/mp4">
-          </video>
-      </div>
+    </div>
+    <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Experiment in GridWorld with Different Reward Penalties</p>
   </div>
+  
+  <section class="hero">
+    <div class="hero-body">
+      <div class="">
+        <div class="columns is-centered">
+          <div class="column is-four-fifths">
+            <div class="columns is-centered" style="position: relative;">
+              <div class="column is-half image-board">
+                <img style="width: 100%;" class="clickable-image" src="static/images/SAC_Comparison_Score_High.png" alt="Image">
+              <div id="initial-dot"></div>
+            <!-- <div class="red-cross"></div> -->
+              </div>
+              <div class="column is-half image-board move">
+                <img style="width: 100%;" class="clickable-image" src="static/images/SAC_Comparison_Constraint_High.png" alt="Image">
+            </div>
+            </div>
+        </div>
+      </div>
+      <p style="margin-top: 5px; text-align: center; margin-bottom: -15px;">Experiment in Highway with Different Reward Penalties</p>
+    </div>
 </section>
 
 <br>
+<br>
+<br>
+
 
 <section class="section" id="Acknowledgements">
   <div class="container is-max-desktop content">
